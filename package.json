@@ -10,10 +10,18 @@
     "parse": "tsx utils/parse.ts"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-brands-svg-icons": "^6.7.1",
+    "@fortawesome/free-regular-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/material": "^6.1.8",
+    "copy-to-clipboard": "^3.3.3",
     "next": "15.0.3",
     "node-html-parser": "^6.1.13",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",

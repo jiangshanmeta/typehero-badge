@@ -1,35 +1,12 @@
 import Head from "next/head";
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Typography from "@mui/material/Typography";
+import Footer from "@/components/Footer";
+import TypeHeroBadge from "@/components/TypeHeroBadge";
 
 
 export default function Home() {
-    const urls = [
-        "https://img.shields.io/endpoint?"+ new URLSearchParams({
-            url:"https://typehero-badge.vercel.app/api/users/jiangshanmeta"
-        }),
-        "https://img.shields.io/endpoint?"+ new URLSearchParams({
-            url:"https://typehero-badge.vercel.app/api/users/jiangshanmeta?"+new URLSearchParams({
-                type:"solved"
-            })
-        }),
-        "https://img.shields.io/endpoint?"+ new URLSearchParams({
-            url:"https://typehero-badge.vercel.app/api/users/jiangshanmeta?"+new URLSearchParams({
-                type:"solvedOverTotal"
-            })
-        }),
-        "https://img.shields.io/endpoint?"+ new URLSearchParams({
-            url:"https://typehero-badge.vercel.app/api/users/jiangshanmeta?"+new URLSearchParams({
-                type:"solvedPercentage"
-            })
-        }),
-        "https://img.shields.io/endpoint?"+ new URLSearchParams({
-            url:"https://typehero-badge.vercel.app/api/users/jiangshanmeta?"+new URLSearchParams({
-                type:"full"
-            })
-        }),
-
-    ];
-
-
 
     return (
         <>
@@ -39,19 +16,33 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div
-                
+            <Box
+                style={{
+                    display:'flex',
+                    alignItems:'center',
+                    justifyContent:'center',
+                    minHeight:'100vh'
+                }}
             >
-                <main >
-                    {
-                        urls.map((url)=>{
-                            return <img src={url} alt="typehero badge" key={url} />
-                        })
-                    }
+                <Paper
+                    elevation={3}
+                    style={{
+                        margin: "24px",
+                        padding: "24px 24px 8px 24px",
+                    }}
+                >
+                    <Typography variant="h4" align="center">
+                        TypeHero Badge Generator
+                    </Typography>
 
-                </main>
+                    <TypeHeroBadge/>
 
-            </div>
+                    <Box style={{marginTop:32}}>
+                        <Footer/>
+                    </Box>
+                    
+                </Paper>
+            </Box>
         </>
     );
 }
