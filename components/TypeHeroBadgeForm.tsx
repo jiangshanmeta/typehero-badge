@@ -20,7 +20,7 @@ const TypeHeroBadgeForm = ({submitFormData}:TypeHeroBadgeFormProps)=>{
     const [username,setUsername] = useState("");
     const [style,setStyle] = useState("flat");
     const [badgeContent,setBadgeContent] = useState<BadgeField>({
-        label: "solved",
+        label: "Solved",
         displayValue: "solvedOverTotal"
     })
 

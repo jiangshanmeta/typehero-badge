@@ -6,4 +6,4 @@ Live at [https://typehero-badge.vercel.app/](https://typehero-badge.vercel.app/)
 
 ## My badge
 
-[![TypeHero user @jiangshanmeta](https://img.shields.io/endpoint?url=https%3A%2F%2Ftypehero-badge.vercel.app%2Fapi%2Fusers%2Fjiangshanmeta%3Ftype%3DsolvedOverTotal&labelColor=%23555555&color=%2397CA00&style=flat-square&label=solved)](https://typehero.dev/@jiangshanmeta/)
+[![TypeHero user @jiangshanmeta](https://img.shields.io/endpoint?url=https%3A%2F%2Ftypehero-badge.vercel.app%2Fapi%2Fusers%2Fjiangshanmeta%3Ftype%3DsolvedOverTotal&labelColor=%23555555&color=%2397CA00&style=flat-square&label=Solved)](https://typehero.dev/@jiangshanmeta/)
